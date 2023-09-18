@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "890158844280",
+    "project_id": "communityconnect-frontend",
+    "storage_bucket": "communityconnect-frontend.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:890158844280:android:5b04556534c2edb9afa08d",
+        "android_client_info": {
+          "package_name": "com.thejitenpatel.commconnect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPcAkPwyzsaWXnwNou1Yj2sMg_EzzGloM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
