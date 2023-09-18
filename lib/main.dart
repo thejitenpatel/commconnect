@@ -1,20 +1,56 @@
+import 'package:commconnect/app_bootstrapper.dart';
+import 'package:commconnect/src/config/theme/app_themes.dart';
 import 'package:flutter/material.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-void main() {
-  runApp(const MainApp());
+import 'src/routing/app_router.dart';
+
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  final container = ProviderContainer(
+    overrides: [],
+  );
+  await AppBootstrapper.init(
+    mainAppWidget: UncontrolledProviderScope(
+      container: container,
+      child: const MainApp(),
+    ),
+    runApp: runApp,
+  );
 }
 
-class MainApp extends StatelessWidget {
+class MainApp extends ConsumerWidget {
   const MainApp({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+  Widget build(BuildContext context, WidgetRef ref) {
+    const title = "Community Connect";
+    const showDebugBanner = false;
+    final goRouter = ref.watch(goRouterProvider);
+
+    return MaterialApp.router(
+      routerConfig: goRouter,
+      debugShowCheckedModeBanner: showDebugBanner,
+      title: title,
+      theme: AppThemes.mainTheme,
     );
+
+    // final app = platformIsIOS
+    //     ? Theme(
+    //         data: AppThemes.mainTheme,
+    //         child: CupertinoApp.router(
+    //           routerConfig: goRouter,
+    //           debugShowCheckedModeBanner: showDebugBanner,
+    //           title: title,
+    //         ),
+    //       )
+    //     : MaterialApp.router(
+    //         routerConfig: goRouter,
+    //         debugShowCheckedModeBanner: showDebugBanner,
+    //         title: title,
+    //         theme: AppThemes.mainTheme,
+    //       );
+
+    // return app;
   }
 }

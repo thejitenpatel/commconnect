@@ -27,7 +27,7 @@ class AppBootstrapper {
     // For prettyifying console debug messages
     debugPrint = _prettifyDebugPrint;
 
-    registerErrorHandlers();
+    // registerErrorHandlers();
 
     // For restricting the app to portrait mode only
     await SystemChrome.setPreferredOrientations([
