@@ -1,0 +1,81 @@
+class Constants {
+  static const double kBorderRadius4 = 4.0;
+  static const double kBorderRadius8 = 8.0;
+  static const double kBorderRadius10 = 10.0;
+  static const double kBorderRadius12 = 12.0;
+  static const double kBorderOpacity01 = 0.1;
+
+  static const double buttonMinHeight = 36;
+  static const double buttonMinWidth = 130;
+  static const double textButtonMinWidth = 40;
+  static const double height56 = 56;
+
+  static const double kPadding0 = 0.0;
+  static const double kPadding2 = 2.0;
+  static const double kPadding4 = 4.0;
+  static const double kPadding8 = 8.0;
+  static const double kPadding10 = 10.0;
+  static const double kPadding12 = 12.0;
+  static const double kPadding16 = 16.0;
+  static const double kPadding20 = 20.0;
+  static const double kPadding24 = 24.0;
+  static const double kPadding28 = 28.0;
+  static const double kPadding30 = 30.0;
+  static const double kPadding32 = 32.0;
+  static const double kPadding38 = 38.0;
+  static const double kPadding40 = 40.0;
+  static const double kPadding48 = 48.0;
+  static const double kPadding72 = 72.0;
+  static const double kPadding90 = 90.0;
+  static const double kPadding98 = 98.0;
+  static const double kPadding142 = 142.0;
+
+  static const double kSize1_2 = 1.2;
+  static const double kSize2 = 2.0;
+  static const double kSize3 = 3.0;
+  static const double kSize4 = 4.0;
+  static const double kSize5 = 5.0;
+  static const double kSize8 = 8.0;
+  static const double kSize10 = 10.0;
+  static const double kSize12 = 12.0;
+  static const double kSize16 = 16.0;
+  static const double kSize18 = 18.0;
+  static const double kSize20 = 20.0;
+  static const double kSize24 = 24.0;
+  static const double kSize28 = 28.0;
+  static const double kSize32 = 32.0;
+  static const double kSize36 = 36.0;
+  static const double kSize40 = 40.0;
+  static const double kSize48 = 48.0;
+  static const double kSize53 = 53.0;
+  static const double kSize56 = 56.0;
+  static const double kSize58 = 58.0;
+  static const double kSize60 = 60.0;
+  static const double kSize64 = 64.0;
+  static const double kSize68 = 68.0;
+  static const double kSize72 = 72.0;
+  static const double kSize76 = 76.0;
+  static const double kSize80 = 80.0;
+  static const double kSize100 = 100.0;
+  static const double kSize108 = 108.0;
+  static const double kSize128 = 128.0;
+  static const double kSize132 = 132.0;
+  static const double kSize143 = 143.0;
+  static const double kSize152 = 152.0;
+  static const double kSize160 = 160.0;
+  static const double kSize172 = 172.0;
+  static const double kSize180 = 180.0;
+  static const double kSize240 = 240.0;
+  static const double kSize200 = 200.0;
+  static const double kSize216 = 216.0;
+  static const double kSize500 = 500.0;
+  static const double kSize700 = 700.0;
+
+  static const double kElevation0 = 0;
+  static const double kElevation2 = 2;
+  static const double kElevation4 = 4;
+  static const double kElevation20 = 20;
+
+  static const int kMaxChars = 255;
+  static const int kPincodeLength = 6;
+}
