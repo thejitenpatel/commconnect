@@ -1,7 +1,7 @@
 import 'package:commconnect/app_bootstrapper.dart';
-import 'package:commconnect/firebase_options.dart';
+// import 'package:commconnect/firebase_options.dart';
 import 'package:commconnect/src/config/theme/app_themes.dart';
-import 'package:firebase_core/firebase_core.dart';
+// import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
@@ -9,9 +9,9 @@ import 'src/routing/app_router.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+  // await Firebase.initializeApp(
+  //   options: DefaultFirebaseOptions.currentPlatform,
+  // );
   final container = ProviderContainer(
     overrides: [],
   );

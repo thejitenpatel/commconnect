@@ -1,4 +1,4 @@
-import 'package:commconnect/src/features/auth/presentation/stepper_form.dart';
+import 'package:commconnect/src/features/auth/presentation/register/register_screen.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
@@ -11,8 +11,8 @@ GoRouter goRouter(Ref ref) {
     routes: [
       GoRoute(
         path: '/',
-        pageBuilder: (context, state) => NoTransitionPage(
-          child: StepperForm(),
+        pageBuilder: (context, state) => const NoTransitionPage(
+          child: RegisterScreen(),
         ),
       ),
     ],

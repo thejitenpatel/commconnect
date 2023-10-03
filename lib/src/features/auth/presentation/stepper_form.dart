@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../../common_wigets/custom_stepper.dart';
+import '../../../common_widgets/custom_stepper.dart';
 
 class StepperForm extends ConsumerWidget {
   StepperForm({super.key});

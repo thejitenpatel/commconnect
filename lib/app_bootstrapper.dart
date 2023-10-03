@@ -5,6 +5,7 @@ import 'package:commconnect/src/localization/string_hardcoded.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 
 class AppBootstrapper {
   const AppBootstrapper._();
@@ -23,6 +24,9 @@ class AppBootstrapper {
 
     // For preparing to read application directory paths
     await PathProviderService.init();
+
+    // Initialize the local storage
+    await Hive.initFlutter();
 
     // For prettyifying console debug messages
     debugPrint = _prettifyDebugPrint;
