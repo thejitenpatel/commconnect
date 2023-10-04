@@ -1,6 +1,7 @@
 import 'package:clock/clock.dart';
 import 'package:commconnect/src/core/local/key_value_storage_base.dart';
 import 'package:commconnect/src/core/local/path_provider_service.dart';
+import 'package:commconnect/src/features/auth/domain/register_detail_model.dart';
 import 'package:commconnect/src/localization/string_hardcoded.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -27,6 +28,10 @@ class AppBootstrapper {
 
     // Initialize the local storage
     await Hive.initFlutter();
+    await Hive.openBox('commConnect');
+
+    // Register The Register Hive Model
+    Hive.registerAdapter(RegisterDetailModelAdapter());
 
     // For prettyifying console debug messages
     debugPrint = _prettifyDebugPrint;

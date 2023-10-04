@@ -79,7 +79,7 @@ class CustomTextField extends StatefulWidget {
       fontFamily: "Inter",
       color: AppColors.textLightGreyColor,
     ),
-    this.contentPadding = const EdgeInsets.fromLTRB(0, 13, 1, 13),
+    this.contentPadding = const EdgeInsets.fromLTRB(12, 13, 0, 13),
     this.labelText,
   });
 
