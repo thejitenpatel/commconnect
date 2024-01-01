@@ -27,3 +27,4 @@ class RegisterDetailModel {
     required this.password,
   });
 }
+

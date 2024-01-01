@@ -88,7 +88,7 @@ class _CustomDropdownFieldSheet<T> extends CustomDropdownField<T> {
           isScrollControlled: true,
           shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.vertical(
-              top: Radius.circular(15),
+              top: Radius.circular(16),
             ),
           ),
           context: context,
@@ -171,33 +171,33 @@ class _CustomDropdownFieldAnimated<T> extends CustomDropdownField<T> {
 
   @override
   Widget build(BuildContext context) {
-    final _items = [hintText ?? 'Select value', ...items.keys];
+    final object = [hintText ?? 'Select value', ...items.keys];
     return enableSearch
         ? CustomDropdown.search(
-            controller: controller,
-            items: _items,
+            // controller: controller,
+            items: object,
             onChanged: onChanged,
             hintText: hintText,
-            hintStyle: hintStyle,
-            selectedStyle: selectedStyle,
-            listItemStyle: listItemStyle,
-            borderRadius: borderRadius,
-            fillColor: fillColor,
-            fieldSuffixIcon: fieldSuffixIcon,
-            borderSide: const BorderSide(color: AppColors.borderSideColor),
+            // hintStyle: hintStyle,
+            // selectedStyle: selectedStyle,
+            // listItemStyle: listItemStyle,
+            // borderRadius: borderRadius,
+            // fillColor: fillColor,
+            // fieldSuffixIcon: fieldSuffixIcon,
+            // borderSide: const BorderSide(color: AppColors.borderSideColor),
           )
         : CustomDropdown(
-            controller: controller,
-            items: _items,
+            // controller: controller,
+            items: object,
             onChanged: onChanged,
             hintText: hintText,
-            hintStyle: hintStyle,
-            selectedStyle: selectedStyle,
-            listItemStyle: listItemStyle,
-            borderRadius: borderRadius,
-            fillColor: fillColor,
-            fieldSuffixIcon: fieldSuffixIcon,
-            borderSide: const BorderSide(color: AppColors.borderSideColor),
+            // hintStyle: hintStyle,
+            // selectedStyle: selectedStyle,
+            // listItemStyle: listItemStyle,
+            // borderRadius: borderRadius,
+            // fillColor: fillColor,
+            // fieldSuffixIcon: fieldSuffixIcon,
+            // borderSide: const BorderSide(color: AppColors.borderSideColor),
           );
   }
 }
